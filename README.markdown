@@ -121,7 +121,7 @@ Paste in the following code:
 		}
 	}
 
-?>  
+?>
 
 Go to **http://localhost/home** and **Hello World!** should hopefully appear.
 

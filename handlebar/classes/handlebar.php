@@ -10,8 +10,8 @@
  * Based partially on the default KO3 View Class
  * and Zombor's KOstache Class
  *
- * @package    Handlebar
- * @category   Module
+ * @package    Kohana/Handlebar
+ * @category   Base
  * @author     Phil Paxton (malkintower.co.uk)
  */
 abstract class Handlebar extends Mustache
