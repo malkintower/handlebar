@@ -16,7 +16,7 @@ Handlebar is a simple class that extends Justin's Mustache class so it can be us
 
 3.	Extract the source files to separate directories
 
-4.	Copy the **Mustache.php** file into the **handlebar/classes/** folder
+4.	Copy the **Mustache.php** file into the **handlebar/classes/** folder and rename it to **mustache.php**
 
 5.	Copy the **handlebar** folder into your Kohana **modules** folder.  
 
@@ -32,7 +32,7 @@ Handlebar is a simple class that extends Justin's Mustache class so it can be us
 				classes/
 				controller/
 					handlebar.php
-				Mustache.php
+				mustache.php
 				handlebar.php
 			image/
 			oauth/
