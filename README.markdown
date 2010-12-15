@@ -1,8 +1,8 @@
 # Handlebar #
 
-[Mustache][1] is another HTML template engine similar to [Twig][2] and [Smarty][3].
+[Mustache][1] is a HTML template engine similar to [Twig][2] and [Smarty][3].
 
-The benefits of Mustache are that it is very simple compared to other template engines and it's platform agnostic.  A Mustache template that works under PHP should also work under other Mustache implementations such as .NET or Python.
+Mustache's main strength is it's implemented in all major web programming languages so Mustache templates can be used on different platforms without amendment.
 
 bobthecow A.K.A [Justin Hileman][4] wrote the [PHP Mustache implementation][5].
 
