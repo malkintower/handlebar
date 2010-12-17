@@ -186,10 +186,16 @@ abstract class Handlebar extends Mustache
 		}
 		catch (Exception $e)
 		{
-			// Display the exception message
-			Kohana::exception_handler($e);
-
-			return '';
+			if (Kohana::$errors)
+			{
+				// Display the exception message
+				Kohana::exception_handler($e);
+				return '';
+			}
+			else
+			{
+				return 'Error Rendering Page';
+			}
 		}
 	}
 
