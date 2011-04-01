@@ -2,12 +2,12 @@
 
 class Controller_Handlebar extends Controller
 {
+
 	public $view;
 
 	public function after()
 	{
-		//$this->request->response = $this->view;
-            $this->response->body($this->view);
+		$this->response->body($this->view);
 	}
 
 }
