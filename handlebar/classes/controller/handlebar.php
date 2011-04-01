@@ -6,7 +6,8 @@ class Controller_Handlebar extends Controller
 
 	public function after()
 	{
-		$this->request->response = $this->view;
+		//$this->request->response = $this->view;
+            $this->response->body($this->view);
 	}
 
 }

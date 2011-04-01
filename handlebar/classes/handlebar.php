@@ -189,7 +189,7 @@ abstract class Handlebar extends Mustache
 			if (Kohana::$errors)
 			{
 				// Display the exception message
-				Kohana::exception_handler($e);
+				Kohana_Exception::handler($e);
 				return '';
 			}
 			else
