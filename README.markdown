@@ -58,8 +58,9 @@ Handlebar is intended as a replacement for standard Kohana Views.
     system/
     ~~~
 
-6.  Enable the handlebar module in **/application/bootstrap.php**  
+6.  Enable the handlebar module in **/application/bootstrap.php**:
 
+    ~~~
     /**
      * Enable modules. Modules are referenced by a relative or absolute path.
      */
@@ -74,6 +75,7 @@ Handlebar is intended as a replacement for standard Kohana Views.
             // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
             'handlebar' => MODPATH.'handlebar'
         ));
+    ~~~
 
 
 [1]: http://mustache.github.com/
