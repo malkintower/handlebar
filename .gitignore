@@ -1,2 +1,2 @@
 # Ignore the mustache class
-handlebar/vendor/mustache/mustache.php
+handlebar/vendor/mustache/[^.]*
