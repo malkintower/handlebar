@@ -30,9 +30,7 @@
 3.  Enable the handlebar module in `/application/bootstrap.php`
 
     ~~~
-    /**
-     * Enable modules. Modules are referenced by a relative or absolute path.
-     */
+    /* Enable modules. Modules are referenced by a relative or absolute path. */
     Kohana::modules(array(
             // 'auth'       => MODPATH.'auth',       // Basic authentication
             // 'cache'      => MODPATH.'cache',      // Caching with multiple backends
