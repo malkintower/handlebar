@@ -4,7 +4,7 @@ This example shows how to create two pages (Home and About) that use the same te
 
 ## Mustache Template
 
-Create the mustache file **/application/views/template.mustache**
+Create the mustache file `/application/views/template.mustache`
 
 Paste in the following markup:
 
@@ -29,16 +29,16 @@ Paste in the following markup:
 
 In our template markup we have the following mustache sections:
 
--   **page_title** and **content** which we will change for each page
+-   `page_title` and `content` which we will change for each page
 
--   **styles** and **navigation** - repeating sections that allows us to add multiple elements
+-   `styles` and `navigation` - repeating sections that allows us to add multiple elements
 
 
 ## Controller Classes
 
 Next we need to create a controller for each page.
 
-Create the controller class **/application/classes/controller/home.php**
+Create the controller class `/application/classes/controller/home.php`
 
 ~~~
 <?php defined('SYSPATH') OR die('No direct access allowed.');
@@ -52,7 +52,7 @@ class Controller_Home extends Controller_Handlebar
 }
 ~~~
 
-Create the controller class **/application/classes/controller/about.php**
+Create the controller class `/application/classes/controller/about.php`
 
 ~~~
 <?php defined('SYSPATH') OR die('No direct access allowed.');
@@ -66,7 +66,7 @@ class Controller_About extends Controller_Handlebar
 }
 ~~~
 
-[!!] In real world applications avoid naming your controller class **Controller_Template** if you still want to use modules that use core kohana views (such as the user guide).
+[!!] In real world applications avoid naming your controller class `Controller_Template` if you still want to use modules that use core kohana views (such as the user guide).
 
 ## View Classes
 
@@ -78,7 +78,7 @@ application/
         view/
 ~~~
 
-Create the view class **/application/classes/view/template.php**
+Create the view class `/application/classes/view/template.php`
 
 ~~~
 <?php defined('SYSPATH') OR die('No direct access allowed.');
@@ -106,7 +106,7 @@ class View_Template extends Handlebar
 }
 ~~~
 
-Create the view class **/application/classes/view/home.php**
+Create the view class `/application/classes/view/home.php`
 
 ~~~
 <?php defined('SYSPATH') OR die('No direct access allowed.');
@@ -126,7 +126,7 @@ class View_Home extends View_Template {
 }
 ~~~
 
-Create the view class **/application/classes/view/about.php**
+Create the view class `/application/classes/view/about.php`
 
 ~~~
 <?php defined('SYSPATH') OR die('No direct access allowed.');
@@ -146,24 +146,24 @@ class View_About extends View_Template {
 }
 ~~~
 
-Go to **http://localhost/home** and **This is the Home page** should appear.  You can then use the links at the top of the page to swap between the **Home** and **About** pages.
+Go to `http://localhost/home` and **This is the Home page** should appear.  You can then use the links at the top of the page to swap between the `Home` and `About` pages.
 
 
 ## Inserting Templates into Templates
 
 So far we've created two pages that use the same markup template.  The content we've inserted is just generic text.  In real world applications content between pages will vary dramatically and will require specific markup to display data.
 
-Let's embellish our current example to see how we can insert other mustache views into the existing template.
+The Handlebar class contains an `insert_template` method that allows mustache templates to be injected into the base template.
 
-Our **Home** page content is currently displayed between &lt;body&gt; tags.  Let's say we want to have our content displayed in paragraph (&lt;p&gt;) tags.
+Our `Home` page content is currently displayed between `<body>` tags.  Let's say we want to have our content displayed in `<p>` (paragraph) tags.
 
-Create the mustache file **/application/views/home.mustache**
+Create the mustache file `/application/views/home.mustache`
 
 ~~~
 <p style="color:green;">{{content}}</p>
 ~~~
 
-We now need to update the View_Home class (**/application/classes/view/home.php**) to use the Home mustache view.
+We now need to update the `View_Home` class (`/application/classes/view/home.php`) to use the Home mustache view.
 
 ~~~
 <?php defined('SYSPATH') OR die('No direct access allowed.');
@@ -190,7 +190,7 @@ class View_Home extends View_Template {
 }
 ~~~
 
-As you can see we've now added a **before** method.  The **before** method calls the **before** method in the parent View class thus setting **template.mustache** as the base template.  We then insert **home.mustache** into the base template's &#123;&#123;content&#125;&#125; tag.
+As you can see we've now added a `before` method.  The `before` method calls the `before` method in the parent View class thus setting `template.mustache` as the base template.  We then insert `home.mustache` into the base template's `{{content}}` tag.
 
 Our mustache template now looks like this:
 
@@ -213,4 +213,4 @@ Our mustache template now looks like this:
 </html>
 ~~~
 
-Go to **http://localhost/home** and **This is the Home page** should appear in green.
+Go to `http://localhost/home` and **This is the Home page** should appear in green.

@@ -1,6 +1,6 @@
 # Hello World Example
 
-Create the mustache template **/application/views/home.mustache**
+Create the mustache template `/application/views/home.mustache`
 
 Paste in the following markup:
 
@@ -14,7 +14,7 @@ Paste in the following markup:
 
 Next we will create the necessary classes to replace &#123;&#123;content&#125;&#125; with &lsquo;Hello World&rsquo;.
 
-Create the controller class **/application/classes/controller/home.php**
+Create the controller class `application/classes/controller/home.php`
 
 Paste in the following code:  
 
@@ -38,7 +38,7 @@ application/
         view/
 ~~~
 
-Create the view class **/application/classes/view/home.php**
+Create the view class `/application/classes/view/home.php`
 
 Paste in the following code:  
 
@@ -59,4 +59,4 @@ Paste in the following code:
     }
 ~~~
 
-Go to **http://localhost/home** and **Hello World!** should hopefully appear.
+Go to `http://localhost/home` and **Hello World!** should appear.

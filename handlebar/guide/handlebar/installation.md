@@ -1,14 +1,8 @@
 # Installation
 
-1.  Download the [Handlebar][2] source from github
+1.  Download the [Handlebar](https://github.com/malkintower/handlebar) source from github and extract the files
 
-2.  Download the [Mustache][1] source from github
-
-3.  Extract the source files to separate directories
-
-4.  Copy the **Mustache.php** file into the **handlebar/vendor/mustache/** folder and rename it to **mustache.php**
-
-5.  Copy the **handlebar** folder into your Kohana **modules** folder.  
+2.  Copy the `handlebar` folder into your Kohana `modules` folder.  
 
     Your directory structure should now look something like this:  
 
@@ -25,7 +19,7 @@
             guide/
             vendor/
                 mustache/
-                    mustache.php
+                    Mustache.php
         image/
         orm/
         unittest/
@@ -33,7 +27,7 @@
     system/
     ~~~
 
-6.  Enable the handlebar module in **/application/bootstrap.php**  
+3.  Enable the handlebar module in `/application/bootstrap.php`
 
     ~~~
     /**
@@ -51,7 +45,3 @@
             'handlebar' => MODPATH.'handlebar'
         ));
     ~~~
-
-
-[1]: https://github.com/bobthecow/mustache.php
-[2]: https://github.com/malkintower/handlebar

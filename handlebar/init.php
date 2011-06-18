@@ -3,5 +3,5 @@
 if ( ! class_exists('Mustache', FALSE))
 {
 	// Load Mustache
-	require Kohana::find_file('vendor', 'mustache/mustache');
+	require Kohana::find_file('vendor', 'mustache/Mustache');
 }
