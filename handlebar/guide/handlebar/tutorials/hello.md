@@ -1,4 +1,4 @@
-# Hello World Example
+# Hello World Tutorial
 
 Create the mustache template `/application/views/home.mustache`
 

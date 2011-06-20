@@ -1,5 +1,5 @@
 ## [Handlebar]()
 - [Installation](installation)
-- Examples
-   - [Hello World](examples/hello)
-   - [Template](examples/template)
+- Tutorials
+   - [Hello World](tutorials/hello)
+   - [Template](tutorials/template)

@@ -1,6 +1,6 @@
-# Template Example
+# Template Tutorial
 
-This example shows how to create two pages (Home and About) that use the same template.
+This tutorial shows how to create two pages (Home and About) that use the same template.
 
 ## Mustache Template
 
